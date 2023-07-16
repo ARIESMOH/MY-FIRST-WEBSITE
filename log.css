@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: url(logpic.jpg);
+  background-size: cover;
+  max-width: 100%;
+}
+.login-form{
+  width: 350px;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.login-form input {
+  padding: 15px 10px;
+  border: 0;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  outline: none;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.login-form button {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 80px;
+  padding: 10px 15px;
+  width: 50%;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  transition: color 0.2s, background-color 0.2s, opacity 0.2s, border-color 0.2s;
+}
+
+.login-form button:hover {
+  color: white;
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+
+.login-form button:active {
+  opacity: 0.2;
+}
+
+.reg{
+  margin-right: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 80px;
+  transition: text-decoration 0.2s, color 0.2s, opacity 0.1s;
+  color: black;
+}
+.reg:hover{
+  color: white;
+  text-decoration: none;
+}
+.reg::after{
+  opacity: 0.2;
+}
+@media(max-width:1350px) and (min-width:900px){
+  body {
+      background: url(logpic.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      object-fit: cover;
+      background-color: lightseagreen;
+      background-attachment: fixed;
+    }
+    .login-form input {
+      padding: 15px 10px;
+      border: 0;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      outline: none;
+      border-radius: 5px;
+      width: 300px;
+    }
+    .login-form button {
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 80px;
+      padding: 10px 15px;
+      width: 50%;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 0;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      transition: color 0.2s, background-color 0.2s, opacity 0.2s, border-color 0.2s;
+    }
+    .reg {
+      margin-right: 40px;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 80px;
+      transition: text-decoration 0.2s, color 0.2s, opacity 0.1s;
+      color: black;
+    }
+}
+@media(max-width:900px) and (min-width:660px){
+  body {
+      background: url(logpic.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      object-fit: cover;
+      background-color: lightseagreen;
+      background-attachment: fixed;
+    }
+    .login-form input {
+      padding: 15px 10px;
+      border: 0;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      outline: none;
+      border-radius: 5px;
+      width: 300px;
+    }
+    .login-form button {
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 80px;
+      padding: 10px 15px;
+      width: 50%;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 0;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      transition: color 0.2s, background-color 0.2s, opacity 0.2s, border-color 0.2s;
+    }
+  .reg {
+      margin-right: 40px;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 80px;
+      transition: text-decoration 0.2s, color 0.2s, opacity 0.1s;
+      color: black;
+    }
+}
+@media(max-width:660px) and (min-width:300px){
+  body {
+      background: url(logpic.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      object-fit: cover;
+      background-color: lightseagreen;
+      background-attachment: fixed;
+    }
+        .login-form input {
+          padding: 15px 10px;
+          border: 0;
+          margin-left: 20px;
+          margin-bottom: 10px;
+          outline: none;
+          border-radius: 5px;
+          width: 300px;
+        }
+    .login-form button {
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 80px;
+      padding: 10px 15px;
+      width: 50%;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 0;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      transition: color 0.2s, background-color 0.2s, opacity 0.2s, border-color 0.2s;
+    }
+    .reg {
+      margin-right: 40px;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 80px;
+      transition: text-decoration 0.2s, color 0.2s, opacity 0.1s;
+      color: black;
+    }
+}
+@media(max-width:300px) and (min-width:200px){
+  body {
+      background: url(logpic.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      object-fit: cover;
+      background-color: lightseagreen;
+      background-attachment: fixed;
+    }
+        .login-form input {
+          padding: 15px 10px;
+          border: 0;
+          margin-left: 60px;
+          margin-bottom: 10px;
+          outline: none;
+          border-radius: 5px;
+          width: 200px;
+        }
+    .login-form button {
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 100px;
+      padding: 10px 15px;
+      width: 120px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 0;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      transition: color 0.2s, background-color 0.2s, opacity 0.2s, border-color 0.2s;
+    }
+    .reg {
+      margin-right: 40px;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 80px;
+      transition: text-decoration 0.2s, color 0.2s, opacity 0.1s;
+      color: black;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INVESTMENT SITE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="invest.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="#">STOCK</a></div>
+      <ul class="links">
+        <li><a href="./home.html">HOME</a></li>
+        <li><a href="./invest.html">INVEST</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+      <div class="toggle_btn">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
+    <div class="dropdown_menu">
+      <ul>
+        <li><a href="./home.html">HOME</a></li>
+        <li><a href="./invest.html">INVEST</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </header> 
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleIcon.classList = isOpen
+        ? 'fa fa-xmark'
+        : 'fa fa-bars'
+    }
+
+  </script>
+  <form action="./stkpush" method="POST">
+<div class="container">
+  <form action="">
+  <h1>MPESA PAY</h1>
+  <p>Please add details below to pay</p>
+  <div class="name">
+  <label  for="username"><b>NAME</b></label>
+  <input type="text" name="amount" placeholder="Enter Name" title="Enter valid name" 
+  required>
+  </div>
+  <div class="phone">
+  <label for="psw"><b>Phone Number</b></label>
+  <input type="text or number" name="phone_number" placeholder="Enter Phone Number" title="Only numbers/digits"
+    pattern="[0-9]+" required>
+  </div>
+  <div class="id">
+  <label class="id" for="id"><b>ID Number</b></label>
+  <input type="text or number" name="id_number" placeholder="Enter ID Number" title="Only numbers/digits"
+  pattern="[0-9]+" required>
+  </div>
+  <div class="amount">
+  <label  for="username"><b>Amount</b></label>
+  <input type="text or number" name="amount" placeholder="Enter Amount" title="Only numbers/digits"  pattern="[0-9]+"
+    required>
+  </div>
+  <div class="terms">
+  <button type="submit" name="submit" value="submit" class="submit">PAYMENT</button>
+  </div>
+  </form>
+</div>
+
+  </form>
+</body>
+</html>

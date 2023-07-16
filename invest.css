@@ -1,0 +1,645 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition:all .2s linear;
+}
+body{
+  background: url(./pic2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  object-fit: cover;
+  background-color: lightseagreen;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: seagreen;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+a:hover {
+  color: black;
+}
+
+/*HEADER*/
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .logo a {
+  font-size: 36px;
+  font-weight: bold;
+  margin-right: 150px;
+  color: green;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+  margin-left: 100px;
+}
+
+i {
+  margin-left: 250px;
+  color: black;
+  size: 20px;
+}
+
+
+/*DROPDOWN MENU*/
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  height: 0;
+  top: 60px;
+  width: 200px;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 240px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/*HERO*/
+
+section {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/*RESPONSIVE DESIGN*/
+@media(max-width:992px) {
+  .navbar .links {
+    display: none;
+  }
+
+  .navbar .toggle_btn,
+  .navbar .logo a {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+
+  body {
+    background: url(./pic2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    object-fit: cover;
+    background-color: lightseagreen;
+  }
+}
+
+@media(min-width:276px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+}
+.container{
+  display: block;
+  padding: 0px;
+  min-height: 76.9vh;
+  margin-top: 90px;
+  margin-left: 550px
+}
+.container h1{
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: green;
+}
+.container p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: green;
+}
+.name{
+  font-size: 20px;
+  color: white; 
+  margin-bottom: 10px; 
+}
+.name input{
+  width: 200px;
+  height: 20px;
+  margin-left: 20px;
+}
+.phone{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.phone input{
+  width: 200px;
+  height: 20px;
+}
+.id{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.id input{
+  width: 200px;
+  height: 20px;
+  margin-left: 10px;
+}
+.amount{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.amount input{
+  width: 200px;
+  height: 20px;
+  margin-left: 20px;
+}
+.terms p{
+  position: absolute;
+  bottom:11.5rem;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+.terms .submit{
+  background-color: green;
+  width: 100px;
+  height: 25px;
+  border-radius: 20px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+@media(max-width:1440px) and(min-width:1030px){
+  body {
+      background: url(./pic2.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      max-width: 100%;
+      object-fit: cover;
+      background-color: lightseagreen;
+    }
+        .navbar .logo a {
+          font-size: 40px;
+          font-weight: bold;
+          margin-right: 10px;
+          color: green;
+        }
+    .container {
+      display: block;
+      padding: 0px;
+      min-height: 76.9vh;
+      margin-top: 90px;
+      margin-left: 500px;
+    }
+
+        .container h1 {
+          display: block;
+          font-size: 40px;
+          margin-block-start: 0.67em;
+          margin-block-end: 0.67em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          font-weight: bold;
+          color: green;
+        }
+    .container p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      color: green;
+      font-size: 30px;
+    }
+  .name {
+      font-size: 30px;
+      color: white;
+      margin-bottom: 10px;
+  }
+  .name input {
+    width: 300px;
+    height: 25px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.phone {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.phone input {
+  width: 300px;
+  height: 25px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+.id {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.id input {
+  width: 300px;
+  height: 25px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+.amount {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.amount input {
+  width: 300px;
+  height: 25px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+.terms p {
+  position: absolute;
+  bottom: 3.5rem;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  margin-left: -120px;
+}
+.terms .submit {
+  background-color: green;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+    
+}
+@media(max-width:1030px) and (min-width:900px){
+  .container {
+      display: block;
+      padding: 0px;
+      min-height: 76.95vh;
+      margin-top: 255px;
+      margin-left: 450px;
+    }
+    .navbar .logo a {
+      font-size: 40px;
+      font-weight: bold;
+      margin-right: 10px;
+      color: green;
+    }
+  .name {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .name input {
+    width: 300px;
+    height: 30px;
+    margin-left: 20px;
+  }
+  .phone {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .phone input {
+    width: 300px;
+    height: 30px;
+  }
+  .id {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .id input {
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  .amount {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .amount input {
+    width: 300px;
+    height: 30px;
+    margin-left: 20px;
+  }
+    .terms p {
+      position: absolute;
+      bottom: -1.95rem;
+      font-size: 25px;
+      color: black;
+      font-weight: bold;
+    }
+  .terms .submit {
+    background-color: green;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 100px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+}
+@media(max-width:900px) and (min-width:660px){
+body {
+    background: url(./pic2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    object-fit: cover;
+    background-color: lightseagreen;
+    background-attachment: fixed;
+  }
+    .container {
+      display: block;
+      padding: 0px;
+      min-height: 76.9vh;
+      margin-top: 270px;
+      margin-left: 200px;
+    }
+    .navbar .logo a {
+      font-size: 40px;
+      font-weight: bold;
+      margin-right: 300px;
+      color: green;
+    }
+    .name {
+      font-size: 30px;
+      color: white;
+      margin-bottom: 10px;
+    }
+  .name input {
+      width: 300px;
+      height: 30px;
+      margin-left: 20px;
+      font-size: 20px;
+  }
+  .phone {
+          font-size: 30px;
+          color: white;
+          margin-bottom: 10px;
+  }
+  .phone input {
+       width: 300px;
+       height: 30px;
+       margin-left: 20px;
+       font-size: 20px;
+  }
+  .id {
+      font-size: 30px;
+      color: white;
+      margin-bottom: 10px;
+  }
+  .id input {
+       width: 300px;
+       height: 30px;
+       margin-left: 20px;
+       font-size: 20px;
+  }
+  .amount{
+      font-size: 30px;
+      color: white;
+      margin-bottom: 10px;
+  }
+     .amount input {
+       width: 300px;
+       height: 30px;
+       margin-left: 20px;
+       font-size: 20px;
+     }
+   .terms .submit {
+      background-color: green;
+      width: 150px;
+      height: 50px;
+      border-radius: 30px;
+      margin-left: 100px;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .terms p {
+      position: absolute;
+      bottom: 9.5rem;
+      font-size: 30px;
+      color: black;
+      font-weight: bold;
+      margin-left: -120px;
+    }
+}
+@media(max-width:660px) and (min-width: 300px){
+  body {
+      background: url(./pic2.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      object-fit: cover;
+      background-color: lightseagreen;
+      background-attachment: fixed;
+    }
+  .container {
+      display: block;
+      padding: 0px;
+      min-height: 76.9vh;
+      margin-top: 90px;
+      margin-left: 100px;
+    }
+  .container p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      color: green;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .navbar .logo a {
+      font-size: 26px;
+      font-weight: bold;
+      margin-left: 180px;
+      color: green;
+    }
+  .name {
+      font-size: 20px;
+      color: white;
+      margin-bottom: 10px;
+  }
+  .name input {
+      width: 200px;
+      height: 20px;
+      margin-left: 0px;
+  }
+  .phone {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  .phone input {
+      width: 200px;
+      height: 20px;
+      margin-left: 0px;
+  }
+  .id {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  .id input {
+      width: 200px;
+      height: 20px;
+      margin-left: 0px;
+  }
+  .amount {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  .amount input {
+      width: 200px;
+      height: 20px;
+      margin-left: 0px;
+  }
+    .terms .submit {
+      background-color: green;
+      width: 100px;
+      height: 25px;
+      border-radius: 20px;
+      margin-left: 60px;
+      cursor: pointer;
+    }
+}
+@media(max-width:300px) and (min-width:200px){
+  body {
+      background: url(./pic2.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      object-fit: cover;
+      background-color: lightseagreen;
+      background-attachment: fixed;
+    }
+  .container {
+      display: block;
+      padding: 0px;
+      min-height: 76.9vh;
+      margin-top: 300px;
+      margin-left: 70px;
+  }
+  .name {
+      font-size: 20px;
+      color: white;
+      margin-bottom: 10px;
+  }
+  .name input {
+          width: 200px;
+          height: 20px;
+          margin-left: 0px;
+  }
+  .phone {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  .phone input {
+      width: 200px;
+      height: 20px;
+      margin-left: 0px;
+  }
+  .id {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  .id input {
+      width: 200px;
+      height: 20px;
+      margin-left: 0px;
+  }
+  .amount {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  .amount input {
+      width: 200px;
+      height: 20px;
+      margin-left: 0px;
+  }
+    .terms .submit {
+      background-color: green;
+      width: 100px;
+      height: 25px;
+      border-radius: 20px;
+      margin-left: 50px;
+      cursor: pointer;
+    }
+    .navbar .logo a {
+      font-size: 26px;
+      font-weight: bold;
+      margin-left: 220px;
+      color: green;
+    }
+}

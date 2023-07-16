@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(./pic5.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  object-fit: cover;
+  background-color: lightseagreen;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: seagreen;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+a:hover {
+  color: black;
+}
+
+/*HEADER*/
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .logo a {
+  font-size: 36px;
+  font-weight: bold;
+  margin-right: 150px;
+  color: green;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+  margin-left: 100px;
+}
+
+i {
+  margin-left: 250px;
+  color: black;
+  size: 20px;
+}
+
+
+/*DROPDOWN MENU*/
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  height: 0;
+  top: 60px;
+  width: 200px;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 240px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/*HERO*/
+
+section {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.motto {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  bottom: 23.5rem;
+  padding-right: 1.5rem
+}
+
+.info {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  bottom: 15.5rem;
+  position: absolute;
+  padding-right: 1.5rem
+}
+
+.partners {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  position: absolute;
+  padding-right: 1.5rem;
+  bottom: 7.5rem;
+}
+
+/*RESPONSIVE DESIGN*/
+@media(max-width:992px) {
+  .navbar .links {
+    display: none;
+  }
+
+  .navbar .toggle_btn,
+  .navbar .logo a {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+
+  body {
+    background: url(./pic5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    object-fit: cover;
+    background-color: lightseagreen;
+  }
+}
+
+@media(min-width:276px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+}
+
+@media(max-width:1350px) and (min-width:900px) {
+  .motto {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 18.5rem;
+    padding-right: 1.5rem
+  }
+
+  .info {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    bottom: 11.5rem;
+    position: absolute;
+    margin-left: 2.5rem;
+  }
+
+  .partners {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    position: absolute;
+    margin-left: 2.5rem;
+    bottom: 6.5rem;
+  }
+
+  body {
+    background: url(./pic5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    object-fit: cover;
+    background-color: lightseagreen;
+    background-attachment: fixed;
+  }
+
+  .navbar .logo a {
+    font-size: 46px;
+    font-weight: bold;
+    margin-left: 220px;
+    color: green;
+  }
+}
+
+@media(max-width:900px) and (min-width:660px) {
+  .motto {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 14.5rem;
+    margin-right: 20px;
+  }
+
+  .info {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    bottom: 10.5rem;
+    position: absolute;
+    padding-right: 1.5rem;
+  }
+
+  .partners {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    padding-right: 1.5rem;
+    bottom: 6.5rem;
+  }
+
+  .navbar .logo a {
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 300px;
+    color: green;
+  }
+
+  body {
+    background: url(./pic5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    object-fit: cover;
+    background-color: lightseagreen;
+    background-attachment: fixed;
+  }
+}
+
+@media(max-width:660px) and (min-width:300px) {
+  motto {
+    text-align: center;
+    font-size: 26px;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 10.5rem;
+    margin-right: -80px;
+    margin-left: 20px;
+  }
+
+  .info {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    bottom: -2rem;
+    position: absolute;
+    margin-right: -80px;
+    padding: 20px;
+  }
+
+  .partners {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    bottom: -9rem;
+    margin-right: -60px;
+    margin-left: 10px;
+  }
+
+  .navbar .logo a {
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: 180px;
+    color: green;
+  }
+
+  body {
+    background: url(./pic5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    object-fit: cover;
+    background-color: lightseagreen;
+    background-attachment: fixed;
+  }
+}
+
+@media(max-width:300px) and (min-width:200px) {
+  .navbar .logo a {
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: 220px;
+    color: green;
+  }
+
+  body {
+    background: url(./pic5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    object-fit: cover;
+    background-color: lightseagreen;
+    background-attachment: fixed;
+  }
+
+  .motto {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 16.5rem;
+    margin-right: -20px;
+  }
+
+  .info {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    bottom: 10.5rem;
+    position: absolute;
+    padding-right: 1.5rem;
+  }
+
+  .partners {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    padding-right: 1.5rem;
+    bottom: 3.5rem;
+  }
+}
